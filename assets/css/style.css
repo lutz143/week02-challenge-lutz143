@@ -1,0 +1,59 @@
+/* define variable colors (matching by looking up the variable through Chrome Dev Tools RGB) */
+:root{
+  --seafoam: rgba(146, 204, 206, 1);
+  --light-gray:rgba(238, 238, 247, 1);
+  --blue-gray: rgba(68, 88, 119, 1);
+  --dark-gray: rgba(49, 52, 61, 1);
+  --black: rgba(28, 29, 33, 1);
+  font-size: 10px;
+}
+
+body {
+  color: var(--seafoam);
+
+}
+
+/* utilized Chrome Dev Tools to determine much of the styling */
+h1, h2, h3 {
+  /* color: var(--blue-gray); */
+}
+
+header{
+  background-color: var(--dark-gray);
+  padding: 20px 0 20px 0;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.0rem;
+  font-weight: 350px;
+}
+
+header h1{
+  background-color: var(--seafoam);
+  color: var(--dark-gray);
+  padding: 5px 1% 5px 3%; 
+  font-size: 1.8em; 
+}
+
+nav{
+  display: flex;
+  justify-content: end;    
+}
+
+nav a{
+  color: var(--seafoam);
+  /* text-decoration: none; */
+  padding: 5px 10px 0.5em;
+  margin-right: 20px;
+  text-decoration: none; 
+  background-image: linear-gradient(200deg, var(--seafoam) 0%, var(--seafoam) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+}
+
+nav a:hover{
+  background-size: 100% 100%;
+  color: var(--dark-gray);
+}
