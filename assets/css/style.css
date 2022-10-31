@@ -1,7 +1,7 @@
 /* define variable colors (matching by looking up the variable through Chrome Dev Tools RGB) */
 :root{
   --seafoam: rgba(146, 204, 206, 1);
-  --light-gray:rgba(238, 238, 247, 1);
+  --light-gray:rgba(238, 238, 247, 0.4);
   --blue-gray: rgba(68, 88, 119, 1);
   --dark-gray: rgba(49, 52, 61, 1);
   --black: rgba(28, 29, 33, 1);
@@ -11,6 +11,7 @@
 body {
   color: var(--seafoam);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
 }
 
 /* utilized Chrome Dev Tools to determine much of the styling */
@@ -20,8 +21,9 @@ h1, h2, h3 {
 
 header{
   background-color: var(--dark-gray);
-  padding: 20px 0 20px 0;  
+  padding: 15px 0 15px 0;  
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   font-size: 2.0rem;
@@ -32,14 +34,14 @@ header h1{
   background-color: var(--seafoam);
   color: var(--dark-gray);
   padding: 5px 1% 5px 3%; 
-  font-size: 2.8em; 
+  font-size: 2.5em; 
+  line-height: 1;
 }
 
 nav{
   display: flex;
   justify-content: end; 
-  margin-right: 3%;  
-  /* background-color: red;  */
+  margin-right: 3.5%;  
 }
 
 nav a{
@@ -106,7 +108,7 @@ nav a:hover{
   padding-right: 15px;
   flex: 0 0 20%;
   text-align: right;
-  line-height: 1.1;
+  line-height: 1.25;
 }
 
 .main-section div{
@@ -114,7 +116,7 @@ nav a:hover{
 }
 
 .main-section p{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .flex-container{
@@ -125,13 +127,11 @@ nav a:hover{
   justify-content: center;
 }
 
-
-/* correct the below */
 .flex-item {
   min-height: 200px;
-  max-height: 2000px;
+  max-height: 200px;
   color: var(--dark-gray);
-  border: solid 6px var(--seafoam);
+  border: 6px solid var(--seafoam);
   flex-basis: calc(50% - 1em);
   display: flex;
   align-items: flex-end;
@@ -139,15 +139,10 @@ nav a:hover{
   margin: 0.5em;
   text-decoration: none;
   background-blend-mode: soft-light;
+  background-color: var(--light-gray);
   background-size: 100%;
   transition: all 0.5s;
   font-size: 0.8em;
-}
-
-.flex-item div{
-  /* display: flexbox; */
-  background-color: var(--seafoam);
-  padding: 8px 10px;
 }
 
 .flex-item:first-child{
@@ -155,10 +150,24 @@ nav a:hover{
   flex-basis: 100%;  
 }
 
+.flex-item div{
+  /* display: flexbox; */
+  background-color: var(--seafoam);
+  padding: 8px 10px;  
+  display: flex;
+  flex: auto 0;
+  flex-direction: column;
+}
+
 .flex-item h3{
   font-size: 2.0em;
   color: var(--dark-gray);
 }
+
+.flex-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 
 .SPPECTR{
   background-image: url("../images/Summer18.jpg");
@@ -170,4 +179,60 @@ nav a:hover{
 
 .youtubeClone{
   background-image: url("../images/Fender1.JPG");
+}
+
+
+
+
+/* media query section */
+
+
+
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .main-section > h2,
+  .main-section > div {
+    flex: 0 0 100%;
+  }
+
+  .main-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .top-banner {
+    justify-content: center;
+    text-align: center;
+  }
 }
