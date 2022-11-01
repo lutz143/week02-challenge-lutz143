@@ -1,6 +1,7 @@
 /* define variable colors (matching by looking up the variable through Chrome Dev Tools RGB) */
 :root{
   --seafoam: rgba(146, 204, 206, 1);
+  --white: rgb(255, 255, 255);
   --light-gray:rgba(238, 238, 247, 0.4);
   --blue-gray: rgba(68, 88, 119, 1);
   --dark-gray: rgba(49, 52, 61, 1);
@@ -170,6 +171,33 @@ nav a:hover{
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+#contact-me address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+#contact-me address a {
+  color: var(--blue-gray);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--dark-gray) 0%, var(--dark-gray) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+#contact-me address a:hover {
+  background-size: 100% 88%;
+  color: var(--white);
+}
 
 .SPPECTR{
   background-image: url("../images/Summer18.jpg");
