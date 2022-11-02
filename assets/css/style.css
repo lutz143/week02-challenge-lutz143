@@ -2,6 +2,7 @@
 :root{
   --seafoam: rgba(146, 204, 206, 1);
   --white: rgb(255, 255, 255);
+  --white-transparent: rgba(255, 255, 255, 0.7);
   --light-gray:rgba(238, 238, 247, 0.4);
   --blue-gray: rgba(68, 88, 119, 1);
   --dark-gray: rgba(49, 52, 61, 1);
@@ -142,9 +143,9 @@ nav a:hover{
   margin: 0.5em;
   text-decoration: none;
   background-blend-mode: soft-light;
-  background-color: var(--light-gray);
+  background-color: var(--white-transparent);
   background-size: 100%;
-  transition: all 0.5s;
+  transition: all 0.3s;
   font-size: 0.8em;
 }
 
@@ -168,7 +169,7 @@ nav a:hover{
 }
 
 .flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(223, 223, 223, 0.062);
 }
 
 #contact-me address {
@@ -200,18 +201,24 @@ nav a:hover{
 }
 
 .SPPECTR{
-  background-image: url("../images/Summer18.jpg");
+  background-image: url("../images/SPPECTR_Homepage.PNG");
+  background-repeat: no-repeat;
+  background-size: 86%;
 }
 
 .iDAD{
-  background-image: url("../images/F-35.PNG");
+  background-image: url("../images/iDAD_Homepage.PNG");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .youtubeClone{
-  background-image: url("../images/Fender1.JPG");
+  background-image: url("../images/youtube-logo-byjosh.jpg");  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 88%;  
+  background-size: 50%;
 }
-
-
 
 
 /* media query section */
