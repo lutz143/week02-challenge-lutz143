@@ -79,7 +79,16 @@ nav a:hover{
   /* color: var(--seafoam); */
 }
 
-.top-banner h2{
+.current-user{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 25%;
+  border-radius: 25px;
+  padding-top: 25px;
+}
+
+/* .top-banner h2{
   background-color: var(--seafoam);
   
   font-size: 3.5em;
@@ -87,7 +96,7 @@ nav a:hover{
   color: var(--dark-gray);
   line-height: 1.2;
   display: inline;
-}
+} */
 
 .main-page{
   max-width: 85%;
