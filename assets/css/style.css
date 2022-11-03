@@ -312,6 +312,10 @@ nav a:hover{
 }
 
 @media screen and (max-width: 768px) {
+  header nav{
+    font-size: 65%;
+  }
+
   .flex-item,
   .flex-item:first-child {
     flex-basis: 100%;
