@@ -1,4 +1,4 @@
-# Personal Deployed Portfolio
+# Personal Portfolio
 
 ## Developer: Josh Lutz
 
