@@ -1,4 +1,4 @@
-/* define variable colors (matching by looking up the variable through Chrome Dev Tools RGB) */
+/* define variable colors */
 :root{
   --yellow: rgba(255, 218, 113, 1);
   --white: rgb(255, 255, 255);
@@ -10,16 +10,18 @@
   font-size: 10px;
 }
 
+/* establish font family and line height for entire body */
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
-/* utilized Chrome Dev Tools to determine much of the styling */
+/* establish coloring for h2 and h3 headers */
 h2, h3 {
   color: var(--dark-gray);
 }
 
+/* style header as a flexbox with padding and giving it a cool Steelers look :) */
 header{
   background-color: var(--dark-gray);
   padding: 15px 6% 15px 0;  
@@ -35,9 +37,9 @@ header{
   left: 0px;
   right: 0px;
   z-index: 100;
-
 }
 
+/* style left section container of header for the 'Josh Lutz' name */
 .left-section{
   display: flex;
   align-items: center;
@@ -48,6 +50,7 @@ header{
   line-height: 1;
 }
 
+/* style the middle section container of header housing the nav links */
 .middle-section{
   display: flexbox;
   align-items: center;
@@ -56,6 +59,7 @@ header{
   width: 130%;
 }
 
+/* style the profile picture in the header */
 .current-user{
   height: 50px;
   border-radius: 16px;
@@ -66,18 +70,20 @@ header{
   transition: all 0.25s ease-in;
 }
 
+/* style the profile picture in header when user hovers */
 .current-user:hover{
   cursor: pointer;
   box-shadow: 1px 1px 15px 1px var(--yellow);
 }
 
-
+/* style nav-specific elements */
 nav{
   display: flex;
   justify-content: end; 
   margin-right: 1.5%;  
 }
 
+/* style the nav links and prep for hover */
 nav a{
   color: var(--yellow);
   /* text-decoration: none; */
@@ -91,11 +97,13 @@ nav a{
   transition: all 0.25s ease-in;
 }
 
+/* style the nav links on hover */
 nav a:hover{
   background-size: 100% 100%;
   color: var(--dark-gray);
 }
 
+/* style the banner and include a Heinz field (Steelers stadium) as the background image */
 .top-banner{
   background: var(--dark-gray);  
   background-image: url("../images/pittsburgh-g6a3d4d6e2_1280.jpg"), linear-gradient(200deg, var(--yellow) 0%, var(--yellow) 100%);
@@ -110,9 +118,9 @@ nav a:hover{
   padding: 0 8.2% 2.5%;
 }
 
+/* style the h2 element in the top banner so that it says Go Steelers in black and yellow */
 .top-banner h2{
-  background-color: var(--yellow);
-  
+  background-color: var(--yellow);  
   font-size: 3.5em;
   padding: 5px 10px;
   color: var(--dark-gray);
@@ -120,12 +128,14 @@ nav a:hover{
   display: inline;
 }
 
+/* style the main page */
 .main-page{
   max-width: 85%;
   margin: auto auto;
   color: var(--dark-gray);
 }
 
+/* style the main section where the user will find the styling of sections such as about me, work, and contact me */
 .main-section{
   font-size: 1.9em;
   margin: 25px 0;
@@ -137,6 +147,7 @@ nav a:hover{
   justify-content: space-between;
 }
 
+/* style the headers that are found outlining what section the user is currently viewing (i.e. About Me, Work, and Contact Me) */
 .main-section h2{
   font-size: 250%;
   border-right: solid 3.8px var(--dark-gray);
@@ -146,22 +157,24 @@ nav a:hover{
   line-height: 1.25;
 }
 
+/* style the flex positioning of the div element in main-section */
 .main-section div{
   flex: 0 0 76.5%;
 }
 
+/* style the paragraph element which is primarily used in the About Me */
 .main-section p{
   margin-bottom: 20px;
 }
 
-.flex-container{
-  /* background-color: red; */
-  
+/* style the flex containers that house all of the work portfolios */
+.flex-container{  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+/* style each flex item, applying dark gray borders and a white shade prior to hover */
 .flex-item {
   min-height: 200px;
   max-height: 200px;
@@ -180,13 +193,14 @@ nav a:hover{
   font-size: 0.8em;
 }
 
+/* establish first child as the main work cards so that it is larger than other work cards */
 .flex-item:first-child{
   min-height: 400px;
   flex-basis: 100%;  
 }
 
+/* style the div container where the text is found inside the respective work card */
 .flex-item div{
-  /* display: flexbox; */
   background-color: var(--yellow);
   padding: 8px 10px;  
   display: flex;
@@ -194,15 +208,18 @@ nav a:hover{
   flex-direction: column;
 }
 
+/* style the main header in the div container found inside the respective work card */
 .flex-item h3{
   font-size: 2.0em;
   color: var(--dark-gray);
 }
 
+/* style the flex item hover capability showing that it is more in focus */
 .flex-item:hover {
   background-color: rgba(223, 223, 223, 0.062);
 }
 
+/* style the contact me container */
 #contact-me address {
   display: flex;
   flex-wrap: wrap;
@@ -211,6 +228,7 @@ nav a:hover{
   height: 100%;
 }
 
+/* style the links within the contact me container and prep them for hover */
 #contact-me address a {
   color: var(--dark-gray);
   padding: 5px;
@@ -226,37 +244,37 @@ nav a:hover{
   display: inline-block;
 }
 
+/* style the hover portion of the contact me when hovering */
 #contact-me address a:hover {
   background-size: 100% 88%;
   color: var(--yellow);
 }
 
+/* add in the image for SPPECTR and size, ensuring no repeat */
 .SPPECTR{
   background-image: url("../images/SPPECTR_Homepage.PNG");
   background-repeat: no-repeat;
   background-size: 86%;
 }
 
+/* add in the image for iDAD and size, ensuring no repeat */
 .iDAD{
   background-image: url("../images/iDAD_Homepage.PNG");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
+/* add in the image for YouTube Clone and size, ensuring no repeat */
 .youtubeClone{
   background-image: url("../images/youtube-logo-byjosh.jpg");  
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position-x: 88%;   */
   background-size: 50%;
 }
 
 
 /* media query section */
-
-
-
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 970px) {
   header {
     display: flex;
     position: relative;
@@ -317,7 +335,7 @@ nav a:hover{
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
   header nav{
     font-size: 65%;
   }
