@@ -32,6 +32,10 @@
 
 ![image](./assets/images/readMeScreenShot.GIF)
 
+## Link to Deployed Application
+
+https://lutz143.github.io/week02-challenge-lutz143/
+
 ## Assets/License/Credits
 
 * Pending
