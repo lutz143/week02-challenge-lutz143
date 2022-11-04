@@ -6,16 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lutz Portfolio</title>
+  <!-- link to reset CSS sheet to establish default styling, link to CSS style sheet -->
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- link an image for tab icon to show josh in script form -->
   <link rel="icon" type="image/jpeg" sizes="64x64" href="./assets//images/Josh-Script-1.png">
 </head>
 
 <body>
+  <!-- link JavaScript for alert messages -->
   <script src="./assets/scripts/alert.js"></script>
-  <!-- creates the main background logo and nav bar -->
-
   
+  <!-- create header container with divs for left (Portfolio Name), middle (Nav links), and right (Profile Picture) sections -->
   <header>
     <div class="left-section">
       <h1>Josh Lutz</h1>
@@ -34,8 +36,7 @@
       <a href="https://www.linkedin.com/in/joshlutz/" target="_blank" rel="noopener noreferrer">
         <img class="current-user" src="./assets/images/Josh Lutz_DC.jpg" alt="User Image of the Portfolio">
       </a>      
-    </div>
-    
+    </div>  
 
   </header>
 
@@ -43,10 +44,10 @@
   <section class="top-banner">
     <div>
       <h2>Let's Go Steelers!</h2>
-      
     </div>
   </section>
 
+  <!-- establish main container with 3 sections with IDs about-me, work, and contact me -->
   <main class = "main-page">
     <section class="main-section" id="about-me">
       <h2>About Me</h2>
@@ -72,8 +73,9 @@
 
     <section class="main-section" id="work">
       <h2>Work</h2>
+      <!-- establish flex container to house links and screenshots of work portfolio -->
       <div class="flex-container">
-
+        <!-- call JS alert message for SPPECTR information -->
         <a href="javascript:sppectr_alert();" class="flex-item SPPECTR">
           <div>
             <h3>SPPECTR</h3>
@@ -81,6 +83,7 @@
           </div>
         </a>
 
+        <!-- call JS alert message for iDAD information -->
         <a href="javascript:iDAD_alert();" class="flex-item iDAD">
           <div>
             <h3>iDAD</h3>
@@ -88,6 +91,7 @@
           </div>
         </a>
 
+        <!-- link user to the YouTube clone styling project I did -->
         <a href="https://lutz143.github.io/youtube-clone/" target="_blank" rel="noopener noreferrer" class="flex-item youtubeClone">
           <div>
             <!-- <h3>YouTube Clone</h3> -->
@@ -102,6 +106,7 @@
       <h2>Contact Me</h2>
       <div>
         <address>
+          <!-- call JS alert for phone message -->
           <a href="javascript:phone_alert();">Phone#</a>
           <a href="mailto:lutz_143@yahoo.com?subject=eFolio&body=Let's Connect!">Email Address</a>
           <a href="https://github.com/lutz143" target="_blank" rel="noopener noreferrer">GitHub</a>
