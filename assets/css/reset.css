@@ -1,3 +1,5 @@
+/* clear any browser bias towards styling for defaulting styling */
+
 * {
   margin: 0;
   padding: 0;
