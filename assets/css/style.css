@@ -252,7 +252,7 @@ nav a:hover{
 
 /* add in the image for SPPECTR and size, ensuring no repeat */
 .SPPECTR{
-  background-image: url("../images/SPPECTR_Homepage.PNG");
+  background-image: url("../images/Virtuoso-Main-Page.png");
   background-repeat: no-repeat;
   background-size: 86%;
 }
